@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0a0a0b;
+    color: #f5f1ea;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #3b82f6;
+    color: #f5f1ea;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2a2620;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3d3830;
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-display text-[11px] uppercase tracking-wide-label text-ink-400;
+  }
+
+  .section-padding {
+    @apply px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24;
+  }
+
+  .section-padding-y {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .container-max {
+    @apply max-w-[1600px] mx-auto;
+  }
+
+  .admin-input {
+    @apply w-full bg-ink-900 border border-ink-700/70 px-4 py-3 text-sm text-ink-50 outline-none transition-colors focus:border-accent;
+  }
+
+  .admin-button {
+    @apply bg-accent text-ink-950 px-4 py-3 text-sm font-display font-medium transition-colors hover:bg-ink-50;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
