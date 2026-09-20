@@ -179,7 +179,7 @@ function ProjectVisual({ project }: { project: ProjectData }) {
         />
       )}
       {/* Abstract interface preview */}
-      <div className={`absolute inset-0 flex flex-col ${project.bannerUrl ? 'bg-ink-950/35' : ''}`}>
+      {!project.bannerUrl && <div className="absolute inset-0 flex flex-col">
         {/* Top bar */}
         <div className="flex items-center gap-2 px-4 py-3 border-b border-ink-700/40 bg-ink-900/50">
           <div className="flex gap-1.5">
@@ -222,7 +222,7 @@ function ProjectVisual({ project }: { project: ProjectData }) {
           </div>
           <div className="h-2.5 rounded-sm bg-ink-600/30 w-12" />
         </div>
-      </div>
+      </div>}
 
       {/* Project number overlay */}
       <div className="absolute top-4 right-4 font-display text-5xl md:text-7xl font-bold text-ink-50/10 tabular-nums pointer-events-none">
