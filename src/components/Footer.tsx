@@ -60,7 +60,7 @@ export default function Footer() {
               <span className="label block mb-4">Social</span>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://github.com/madhavpathak"
+                  href="https://github.com/madhavpathakk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 font-display text-sm text-ink-200 hover:text-ink-50 transition-colors"
@@ -68,7 +68,7 @@ export default function Footer() {
                   <Github size={15} /> GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/madhavpathak"
+                  href="https://www.linkedin.com/in/madhavpathakk/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 font-display text-sm text-ink-200 hover:text-ink-50 transition-colors"
