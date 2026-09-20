@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio-webstie/',
+  base: process.env.NETLIFY ? '/' : '/portfolio-webstie/',
   plugins: [react()],
   resolve: {
     alias: {
